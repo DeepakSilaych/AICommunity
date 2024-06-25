@@ -8,7 +8,7 @@ function BlogDetails() {
     const {id}=useParams();
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/blogs/${id}`)
+        axios.get(`http://localhost:8000/blog/${id}`)
         .then((response) => {
             setBlog(response.data)
             console.log(response.data)
@@ -26,9 +26,9 @@ function BlogDetails() {
             <p>{blog.authors}</p>
             <p>{blog.date}</p>
         </div>
-        <p className='body'>
-            <pre>
-                {blog.content}
+        <p className='blog_body'>
+            <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
+                <div dangerouslySetInnerHTML={{ __html: blog. content }} />
             </pre>
         </p>
        

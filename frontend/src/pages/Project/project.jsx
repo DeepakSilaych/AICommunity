@@ -20,7 +20,7 @@ function Project() {
             })
         }
     
-    </div>
+    </div>  
   )
 }
 

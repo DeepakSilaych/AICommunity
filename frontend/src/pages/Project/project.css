@@ -29,14 +29,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 1rem .2rem 1rem;
     font-family: "Chakra Petch", sans-serif;
     font-size: 3rem;
     color: #fff;
 }
 
 .project_item span p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1rem;
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: "Chakra Petch", sans-serif;

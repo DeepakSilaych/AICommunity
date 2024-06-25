@@ -6,6 +6,8 @@ import Blog from './pages/blogsHome/blog.jsx';
 import Layout from './pages/Layout/Layout.jsx';
 import Project from './pages/Project/project.jsx';
 import BlogDetails from './pages/blogsHome/BlogDetails.jsx';
+import Team from './pages/Team/Team.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/blogs/:id" element={<BlogDetails />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/projects" element={<Project />} />
+          <Route path="/ourteam" element={<Team />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -37,7 +37,15 @@
     color: white;
 }
 
-.blogdetails .body{
-    font-size: 1.2rem;
-    margin-top: 1rem;
+.blogdetails .blog_body{
+    font-family: monospace;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 2rem;
+    word-wrap: normal;
+}
+
+.blogdetails .blog_body a{
+    color: white;
+    text-decoration: underline;
 }

@@ -1,0 +1,18 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.about{
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    background: rgb(34,67,195);
+    background: linear-gradient(40deg, rgba(34,67,195,1) 0%, rgba(170,48,223,1) 100%);
+    border-radius: 10px;
+    padding: 1rem;
+}
+.home1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}

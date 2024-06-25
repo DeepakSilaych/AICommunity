@@ -1,7 +1,24 @@
 from rest_framework import serializers
 from .models import Blog, Member 
 
-class BlogSerializer(serializers.ModelSerializer):
+class Blog_all_Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = Blog
+        fields = ["id","title", "authors","date"]
+
+    def create(self, validated_data):
+        return Blog.objects.create(**validated_data)
+        
+    def update(self, instance, validated_data):
+        instance.title=validated_data.get('title', instance.title)
+        instance.authors=validated_data.get('authors', instance.authors)
+        instance.content=validated_data.get('content', instance.content)
+        instance.pic=validated_data.get('pic', instance.pic)
+        instance.save()
+        return instance
+    
+
+class Blog_specific_Serializer(serializers.ModelSerializer):
     class Meta:
         model = Blog
         fields = '__all__'

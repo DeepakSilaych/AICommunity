@@ -1,0 +1,43 @@
+.blog{
+    z-index: 10;
+    width: 96%;
+}
+
+.blog .oneBlogBox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    background: rgb(34,67,195);
+    background: linear-gradient(40deg, rgba(34,67,195,1) 0%, rgba(170,48,223,1) 100%);
+    font-family: "Chakra Petch", sans-serif;
+    border-radius: 10px;
+    z-index:10;
+    margin: 1.5vh;
+    padding-left: 1vw;
+    color: white;
+}
+.blog .cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 95%;
+}
+
+.blogdetails{
+    width: 100%;
+    background: rgb(34,67,195);
+    background: linear-gradient(40deg, rgba(34,67,195,1) 0%, rgba(170,48,223,1) 100%);
+    font-family: "Chakra Petch", sans-serif;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.blogdetails .body{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}

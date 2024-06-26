@@ -9,6 +9,7 @@ import BlogDetails from './pages/blogsHome/BlogDetails.jsx';
 import Team from './pages/Team/Team.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 
+
 function App() {
   return (
     <BrowserRouter>

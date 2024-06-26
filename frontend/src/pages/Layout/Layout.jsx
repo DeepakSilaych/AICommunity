@@ -3,6 +3,7 @@ import './layout.css';
 import { useEffect, useRef } from 'react';
 import bgVideo from '../../assets/video.mp4';
 import Navbar from "../Navbar/Navbar";
+import Footer from '../footer/footer.jsx';
 
 
 export default function Layout({children}) {
@@ -24,6 +25,7 @@ export default function Layout({children}) {
       {children}
       </div>
       </div>
+      
         <video src={bgVideo}
                autoPlay 
                muted 
@@ -31,7 +33,7 @@ export default function Layout({children}) {
                playsInline
                ref={videoRef}
                className="myVideo"/>
-               
+      <Footer />        
     </div>
   );
 }
